@@ -8,6 +8,7 @@ public class SpringSecuritySession2Application {
 
     public static void main(String[] args) {
         SpringApplication.run(SpringSecuritySession2Application.class, args);
+
     }
 
 }

@@ -12,19 +12,19 @@ import java.util.List;
 public class ProductServiceImpl {
     private ProductRepository productRepository;
 
-    private List<Product> findAllProduct(){
+    public List<Product> findAllProduct(){
         return productRepository.findAll();
     }
 
-    private void saveProduct(Product product){
+    public void saveProduct(Product product){
         productRepository.save(product);
     }
 
-    private Product findByIdProduct(Long id){
+    public Product findByIdProduct(Long id){
         return productRepository.getById(id);
     }
 
-    private void deleteByIdProduct(Long id){
+    public void deleteByIdProduct(Long id){
         productRepository.deleteById(id);
     }
 }

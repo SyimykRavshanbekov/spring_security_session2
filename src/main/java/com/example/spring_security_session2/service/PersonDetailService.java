@@ -19,7 +19,7 @@ public class PersonDetailService implements UserDetailsService {
         if (person == null){
             throw new UsernameNotFoundException("User name not found exception");
         }
-        return null;
+        return person;
     }
 
 
